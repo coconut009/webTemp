@@ -1,43 +1,12 @@
 <!DOCTYPE html>
 <html>
-<style>
-.filterDiv {
-  float: left;
-  background-color: #2196F3;
-  color: #ffffff;
-  width: 100px;
-  line-height: 100px;
-  text-align: center;
-  margin: 2px;
-  display: none;
-}
-
-.show {
-  display: block;
-}
-
-.container {
-  margin-top: 20px;
-  overflow: hidden;
-}
-
-/* Style the buttons */
-.btn {
-  border: none;
-  background-color: #f1f1f1;
-  cursor: pointer;
-  width:100px
-}
-
-.btn:hover {
-  background-color: #ddd;
-}
-
-.btn.active {
-  background-color: #666;
-  color: white;
-}
-</style>
+	<head>
+		<title>ATEA</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
 <body>
 
 <h2>Filter DIV Elements</h2>
@@ -45,30 +14,30 @@
 <div id="myBtnContainer">
   <button class="btn active" onclick="filterSelection('all')"> Show all</button>
   <div>
-  <button class="btn" onclick="filterSelection('cars')"> Cars</button>
-  <button class="btn" onclick="filterSelection('animals')"> Animals</button>
-  <button class="btn" onclick="filterSelection('animals')"> category_2</button>
+  <button class="btn" onclick="filterSelection('dt')"> dt</button>
+  <button class="btn" onclick="filterSelection('ny')"> ny</button>
+  <button class="btn" onclick="filterSelection('cn')"> chinese</button>
   </div>
   <div>
-  <button class="btn" onclick="filterSelection('fruits')"> Fruits</button>
-  <button class="btn" onclick="filterSelection('colors')"> Colors</button>
+  <button class="btn" onclick="filterSelection('mkm')"> mkm</button>
+  <button class="btn" onclick="filterSelection('jp')"> jp</button>
   </div>
 </div>
 
 <div class="container">
-  <div class="filterDiv cars">BMW</div>
-  <div class="filterDiv colors fruits">Orange</div>
-  <div class="filterDiv cars">Volvo</div>
-  <div class="filterDiv colors">Red</div>
-  <div class="filterDiv cars">Ford</div>
-  <div class="filterDiv colors">Blue</div>
-  <div class="filterDiv animals">Cat</div>
-  <div class="filterDiv animals">Dog</div>
-  <div class="filterDiv fruits">Melon</div>
-  <div class="filterDiv fruits animals">Kiwi</div>
-  <div class="filterDiv fruits">Banana</div>
-  <div class="filterDiv fruits">Lemon</div>
-  <div class="filterDiv animals">Cow</div>
+  <div class="filterDiv dt">BMW</div>
+  <div class="filterDiv jp mkm">Orange</div>
+  <div class="filterDiv dt">Volvo</div>
+  <div class="filterDiv jp">Red</div>
+  <div class="filterDiv dt">Ford</div>
+  <div class="filterDiv jp">Blue</div>
+  <div class="filterDiv ny">Cat</div>
+  <div class="filterDiv ny">Dog</div>
+  <div class="filterDiv mkm">Melon</div>
+  <div class="filterDiv cn ny">Kiwi</div>
+  <div class="filterDiv mkm">Banana</div>
+  <div class="filterDiv mkm">Lemon</div>
+  <div class="filterDiv ny">Cow</div>
 </div>
 
 <script>
